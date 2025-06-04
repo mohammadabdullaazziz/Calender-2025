@@ -1,0 +1,85 @@
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+body{
+ background-color: black;
+ font-family: cursive;
+}
+section{
+  width: 80%;
+  margin: 50px auto;
+  background-color: black;
+  border: 4px solid white;
+  border-radius: 10px;
+  overflow: auto;
+}
+h3,h4{
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+h4{
+  font-size: 25px;
+}
+.caleder-container{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  gap: 2px;
+  padding: 2% 3%;
+  background-color: white;
+  border: 4px solid #ddd;
+}
+.date,.day{
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 100px;
+}
+.day{
+ background-color:crimson ;
+}
+.day:hover{
+ background-color:blueviolet ;
+}
+.datte,.datte{
+  background-color: blueviolet;
+}
+@media screen and (max-width:1140px) {
+ section{
+  width: 90%;
+  margin: 50px auto;
+  background-color: black;
+  border: 4px solid white;
+  border-radius: 10px;
+}
+h3,h4{
+  font-size: 20px;
+}
+h4{
+  font-size: 15px;
+}
+.caleder-container{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  overflow: auto;
+}
+
+.date,.day{
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  height: 100%;
+  padding: 5% 15%;
+}
+.datte,.day{
+  background-color: crimson;
+}
+
+}
